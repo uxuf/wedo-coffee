@@ -1,0 +1,7 @@
+parameters:
+#    wedo_grinder.example.class: Wedo\GrinderBundle\Example
+
+services:
+#    wedo_grinder.example:
+#        class: %wedo_grinder.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
