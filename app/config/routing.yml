@@ -1,0 +1,4 @@
+wedo_grinder:
+    resource: "@WedoGrinderBundle/Resources/config/routing.yml"
+    prefix:   /
+
