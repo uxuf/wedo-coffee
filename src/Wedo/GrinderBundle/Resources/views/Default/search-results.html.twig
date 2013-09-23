@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+{% if items %}
+<form target="_top" action="{{ path('wedo_grinder_select') }}" method="POST">
+    <div>
+    {% for item in items %}
+        <label><input type="checkbox" value="{{ item.image.thumbnailLink }}" name="image[]"><img src="{{ item.image.thumbnailLink }}"/></input></label>
+    {% endfor %}
+    </div>
+
+    <input type="submit" value="Use these Images" />
+</form>
+{% endif %}
+{% endblock body %}

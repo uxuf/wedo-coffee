@@ -1,1 +1,11 @@
-Hello {{ name }}!
+{% extends '::base.html.twig' %}
+{% block body %}
+<form action="{{ path('wedo_grinder_search') }}" target="iframe">
+    <input type="text" name="q" />
+    <input type="submit" value="Go!">
+</form>
+
+<iframe name="iframe" width="100%" height="500px"></iframe>
+{% endblock body %}
+{% block javascripts %}
+{% endblock %}
