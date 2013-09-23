@@ -1,3 +1,23 @@
 wedo_grinder_homepage:
-    pattern:  /hello/{name}
+    pattern:  /coffee/
     defaults: { _controller: WedoGrinderBundle:Default:index }
+
+wedo_grinder_search:
+    pattern: /search/
+    defaults: { _controller: WedoGrinderBundle:Default:search }
+
+wedo_grinder_select:
+    pattern: /select/
+    defaults: { _controller: WedoGrinderBundle:Default:select }
+
+wedo_grinder_select_add:
+    pattern: /grinder/add
+    defaults: { _controller: WedoGrinderBundle:Default:add }
+
+wedo_grinder_select_get:
+    pattern: /grinder/get
+    defaults: { _controller: WedoGrinderBundle:Default:get }
+
+wedo_grinder_grind:
+    pattern: /grinder/grind/
+    defaults: { _controller: WedoGrinderBundle:Default:grind }
