@@ -4,6 +4,7 @@ assets:
 	php app/console assets:install web --symlink --relative
 
 composer-install:
+	mkdir bin
 	curl -s https://getcomposer.org/installer | php -- --install-dir=bin
 
 composer-update:
